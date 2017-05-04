@@ -15,5 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/tyo','controllerasus@index');
-Route::post('/tyo','controllerasus@store');
+// Route::get('/asus','controllerasus@index');
+// Route::post('/asus','controllerasus@store');
+Route::resource('/asus','controllerasus');
